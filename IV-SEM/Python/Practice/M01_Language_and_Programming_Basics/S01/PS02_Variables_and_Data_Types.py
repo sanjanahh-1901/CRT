@@ -68,3 +68,10 @@ _myVariable = 10
 myVariable2 = 15
 print(my_variable, _myVariable, myVariable2)
 
+# Invalid variable names (uncommenting these will raise errors)
+# 2nd_variable = 20  # Cannot start with a digit
+# my-variable = 25   # Hyphens are not allowed
+# my variable = 30   # Spaces are not allowed
+# for = 35          # 'for' is a reserved keyword
+# import = 40       # 'import' is a reserved keyword
+# print(2nd_variable, my-variable, my variable, for, import)
