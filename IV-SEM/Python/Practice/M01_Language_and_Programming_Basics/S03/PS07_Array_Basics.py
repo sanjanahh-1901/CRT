@@ -11,3 +11,4 @@ print(arr)
 import numpy
 arr = numpy.array([12, 45, 78, 36])
 print(arr, type(arr))
+
