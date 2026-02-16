@@ -68,3 +68,4 @@ if n == strong_sum:
 else:
     print("not strong")
 
+
