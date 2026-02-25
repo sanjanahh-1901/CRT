@@ -43,4 +43,72 @@ for ch in li:
 print(res)
 
 print("@".join(li))  #a@b@c
+
+1. Pyramid star pattern
+input: n = 4
+output: *
+       * *
+      * * *
+     * * * *
+
+#code
+n = int(input())
+for i in range(1, n+1):
+    print(" "*(n-i) + "* " * i)
+
+2. Reverse pyramid star pattern
+input: n = 4
+output: * * * *
+         * * *
+          * *
+           *
+#code
+n = int(input())
+for i in range(n, 0, -1):
+    print(" "*(n-i) + "* " * i)
+
+3. Diamond star pattern
+input: n = 4    
+output:    *
+          * *
+         * * *
+        * * * *
+         * * *
+          * *
+           *
+
+#code
+n = int(input())
+for i in range(1, n+1):
+    print(" "*(n-i) + "* " * i)
+for i in range(n-1, 0, -1):
+    print(" "*(n-i) + "* " * i)
+
+4. Number pyramid pattern
+input: n = 4
+output:    1
+          1 2
+         1 2 3
+        1 2 3 4
+
+#code
+n = int(input())
+for i in range(1, n+1):
+    print(" "*(n-i) + " ".join(str(j) for j in range(1, i+1)))
+
+5. Hollow pyramid star pattern
+input: n = 4
+output:    *
+          * *
+         *   *
+        * * * *
 '''
+#code
+n = int(input())
+for i in range(1, n+1):
+    if i == 1:
+        print(" "*(n-i) + "*")
+    elif i == n:
+        print("* " * n)
+    else:
+        print(" "*(n-i) + "*" + " "*(2*i-3) + "*" )
