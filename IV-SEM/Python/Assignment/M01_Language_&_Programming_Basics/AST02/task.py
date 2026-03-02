@@ -1,9 +1,17 @@
-n = int(input())
-if n % 2 == 1:
-    print("Odd")
-elif n % 2 == 0 and 2 <= n <= 5:
-    print("Not Weird")
-elif n % 2 == 0 and 6 <= n <= 20:
-    print("Weird")
-elif n % 2 == 0 and n > 20:
-    print("Not Weird")
+def even_odd(n: int) -> str:
+    if n % 2 == 1:
+        return "Odd"
+    elif n % 2 == 0 and 2 <= n <= 5:
+        return "Not Weird"
+    elif n % 2 == 0 and 6 <= n <= 20:
+        return "Weird"
+    elif n % 2 == 0 and n > 20:
+        return "Not Weird"
+   
+if __name__ == '__main__':
+    n = int(input())
+    print(even_odd(n))
+
+
+
+
