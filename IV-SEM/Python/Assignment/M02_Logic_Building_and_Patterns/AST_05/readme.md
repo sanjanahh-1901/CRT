@@ -26,3 +26,4 @@ Output: [6, 3, 10, 5, 16, 8, 4, 2, 1]
 
 ## Submission Rules
 - Only `task.py` will be evaluated
+

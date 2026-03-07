@@ -12,3 +12,4 @@ def isUgly(n: int) -> bool:
 if __name__ == '__main__':
     n = int(input())
     print(isUgly(n))
+
