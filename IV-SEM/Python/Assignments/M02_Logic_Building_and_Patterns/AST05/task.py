@@ -1,11 +1,11 @@
 def number_triangle(n: int) -> str:
-    lines = []
+    result = ""
     for i in range(1, n + 1):
-        row = ""
         for j in range(1, i + 1):
-            row += str(j)
-        lines.append(row)
-    return "\n".join(lines)
+            result += str(j)
+        if i != n:
+            result += "\n"
+    return result
 
 if __name__ == "__main__":
     n = int(input())
