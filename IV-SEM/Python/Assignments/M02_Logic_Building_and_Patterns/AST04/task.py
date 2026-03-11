@@ -4,4 +4,4 @@ def right_triangle(n: int) -> str:
 
 if __name__ == "__main__":
     n = int(input())
-    right_triangle(n)
+    print(right_triangle(n))
